@@ -1,0 +1,120 @@
+
+#top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#top li {
+    float: left;
+}
+#top li a:link, a:visited{
+    display: block;
+    width: 250px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#top li a:hover, a:active{
+    background-color: #04BFEA;
+}
+
+#lt {
+    float: left;
+}
+#lt ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#lt ul a:link,a:visited
+{
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    width:180px;
+    text-align:center;
+    padding:8px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#lt ul a:hover,a:active
+{
+    background-color:#7A991A;
+} /*左列目录表*/
+
+
+
+.attention,.activity{
+    width: 250px;
+    padding-bottom: 20px;
+    float: right;
+}
+.attention span{
+    float: right;
+}
+
+.activity p span{
+    color: black;
+}
+.ad1{
+    width: 195px;
+    margin-top: 0;
+}
+
+
+
+#footer{
+    width: 100%; height: 50px;
+    line-height: 50px;
+    font-family: Tahoma;
+    position: absolute;
+    left: 0; bottom: 0;
+    color: chartreuse;
+    border-top: 1px dashed #999;
+}
+#footer ul{ float: right; }
+#footer li{ float: left; }
+#footer li a{
+    font-size: 13px;
+    color: black;
+    line-height:30px;
+}
+#welcome{
+    font-size: 13px;
+}
+#result{
+    position: relative;
+    top:+25px;
+}
+#resulttable{
+    position: absolute;
+    left: 230px;
+}
+.line1{
+    width: 400px;
+    background-color: #dbf3ff;
+}
+.line2{
+    width:300px;
+    background-color: #c8ffb6;
+}
+.line3{
+    width: 100px;
+    background-color: #ffe6da;
+}
+td{
+    text-align: center;
+}
+#submit{
+    background-color: blueviolet;
+    height:46px;
+    width:100px;
+    display: inline-block;
+    border: none;
+}

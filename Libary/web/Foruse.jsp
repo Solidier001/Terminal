@@ -19,7 +19,7 @@
 <div>
   <div id="top">
      <ul>
-      <li><a href="#">本馆介绍</a></li>
+      <li><a href="jieshao.jsp">本馆介绍</a></li>
       <li><a href="#">馆藏资源</a></li>
       <li><a href="#">电子资源</a></li>
       <li><a href="#">读者天地</a></li>

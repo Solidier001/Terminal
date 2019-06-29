@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="dao.Message" table="AllMessages">
+        <id name="id" column="messageId">
+            <generator class="native"/>
+        </id>
+        <property name="sender" column="sender"/>
+        <property name="content" column="Context"/>
+        <property name="reciver" column="reciver"/>
+        <property name="sendtime" column="sendtime" type="java.util.Date"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.action.excludePattern" value="/websocket"/>
+    <package name="customer_service" namespace="/" extends="struts-default">
+        <action name="messadelode" class="action.LodemessageAction" method="Lodemessage">
+            <result name="success">/sevice.jsp</result>
+        </action>
+        <action name="register" class="action.RegisterAction">
+            <result name="success">/login.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="login" class="action.LoginAction">
+            <result name="success">/index.jsp</result>
+            <result name="input">/login.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+        <action name="DetermineLogin" class="action.DetermineLoginAction" method="DetermineLogin">
+            <result name="login">/login.jsp</result>
+            <result name="success">/Order.jsp</result>
+            <result name="input" type="chain">
+                <param name="namespace">/</param>
+                <param name="actionName">add</param>
+            </result>
+        </action>
+        <action name="Setorder" class="action.SetorderAction" method="Setorder">
+            <result name="success">/successOrders.jsp</result>
+        </action>
+        <action name="add" class="action.SetorderAction" method="add">
+            <result name="success" type="chain">
+                <param name="namespace">/</param>
+                <param name="actionName">Setorder</param>
+            </result>
+        </action>
+        <action name="chaxun" class="action.Order" method="chaxun">
+            <result name="success" type="dispatcher">/successOrders.jsp</result>
+            <result name="error" type="dispatcher">/searchOrders.jsp</result>
+        </action>
+        <action name="uplode" class="action.UploadAction">
+            <result name="success">uplode.jsp</result>
+        </action>
+        <action name="pay" class="action.payaction" method="pay">
+            <result name="success">pay.html</result>
+        </action>
+        <action name="push" class="action.SetorderAction" method="push">
+            <result name="success">pay.html</result>
+        </action>
+    </package>
+</struts>

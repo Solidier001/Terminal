@@ -1,0 +1,78 @@
+/*body{*/
+    /*margin:0px;*/
+    /*padding: 0px;*/
+    /*font-family: 宋体;*/
+    /*background: #03525e;*/
+/*}*/
+body{
+    margin:0px;
+    padding: 0px;
+    font-family:宋体;
+    background: url(../img/img.jpg);
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position:absolute ;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #585858;
+    text-align: center;
+    border-radius: 40px;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 幼圆;
+}
+.box input[type="text"],.box input[type="password"]{
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border: 2px solid #3498bd;
+    padding: 14px 10px;
+    width: 200px;
+    outline:none;
+    color: wheat;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width:280px ;
+    border-color: #2ecc71;
+}
+.box input[type="submit"]{
+    border: 0px;
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline:none;
+    color: wheat;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+/*.box1{*/
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+    /*font-size: 20px;*/
+    /*padding: 8px 0;*/
+    /*margin: 8px 0;*/
+    /*border-bottom: 1px solid red;*/
+/*}*/
+.box1{
+    clear: both;
+}
+.box2{
+    position: relative;
+    float: left;
+}

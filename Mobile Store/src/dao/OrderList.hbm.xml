@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="dao.OrderList" table="Orders">
+        <id name="id" column="id" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="account" column="good"/>
+        <property name="address" column="address"/>
+        <property name="phone" column="phone"/>
+        <property name="price" column="price"/>
+        <property name="username" column="username"/>
+        <property name="mun" column="num"/>
+        <property name="state" column="state"/>
+    </class>
+</hibernate-mapping>
